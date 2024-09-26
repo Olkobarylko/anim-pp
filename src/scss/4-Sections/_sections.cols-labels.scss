@@ -1,0 +1,95 @@
+.s-cols-labels {
+    @apply pt-[96px] mobile-tablet:overflow-x-clip border-b border-b-[#D8D8D8];
+    @apply tablet:py-[92px] tablet:border-none;
+    @apply desktop:pt-[52px] desktop:pb-[112px];
+}
+
+.s-cols-labels__header {
+    @apply max-w-[932px] mx-auto mb-[107px];
+    @apply tablet:mb-[70px];
+    @apply desktop:mb-[35px];
+}
+
+.s-cols-labels__title {
+    @apply font-bold text-m-2 leading-12 text-center mb-[11px];
+    @apply tablet:text-ml-1;
+    @apply laptop:text-ml-2;
+    @apply desktop:text-l;
+}
+
+.s-cols-labels__description {
+    @apply text-s leading-15 text-center mb-[11px];
+    @apply tablet:text-m;
+    @apply desktop:text-m-1;
+}
+
+.s-cols-labels__button {
+    @apply text-center hidden;
+    @apply tablet:block;
+}
+
+.s-cols-labels__row {
+    @apply max-w-[1178px] mx-auto flex justify-center flex-wrap gap-x-[17px];
+    @apply tablet:flex-nowrap;
+}
+
+.s-cols-labels__col-labels {
+    @apply laptop:pl-[46px];
+}
+
+.s-cols-labels__col-labels:first-child {
+
+    .s-cols-labels__label {
+
+        &:before {
+            @apply right-[24px] -bottom-[30px];
+            
+        }
+
+        @media (max-width: 767px) {
+            &:before {
+                @apply content-[url('../../img/label-decor-mob.svg')] -bottom-[50px];
+            }
+        }
+    }
+}
+
+.s-cols-labels__col-labels:last-child {
+    @apply content-center mt-[70px];
+    @apply tablet:mt-0;
+
+    .s-cols-labels__label {
+
+        &:before {
+            @apply left-[12px] -bottom-[30px] transform -scale-x-100;
+        }
+    }
+}
+
+.s-cols-labels__label {
+    @apply font-bold text-s text-center leading-10 bg-orange-200 rounded-sl p-[14px] min-w-[149px] relative;
+    @apply tablet:text-m-1 tablet:min-w-[180px] tablet:p-[20px];
+    @apply desktop:text-ml-1 desktop:min-w-[327px] desktop:p-[30px];
+
+    &:before {
+        @apply content-[url('../../img/label-decor.svg')] absolute;
+    }
+}
+
+.s-cols-labels__col-img {
+    @apply order-3 w-full relative min-h-[348px] mx-auto max-w-[79.5%];
+    @apply tablet:order-[0] tablet:max-w-[35%];
+    @apply desktop:min-w-[462px] desktop:min-h-[469px] desktop:max-w-0 -z-[1];
+    
+    picture,
+    img {
+        @apply w-full h-full object-contain;
+        @apply mx-auto transform translate-y-[50px];
+        @apply tablet:transform-none;
+    }
+
+    .s-cols-labels__img-button {
+        @apply absolute left-1/2 transform -translate-x-1/2 bottom-[15px];
+        @apply tablet:hidden;
+    }
+}

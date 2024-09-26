@@ -1,0 +1,53 @@
+.s-cta {
+    @apply pb-[33px];
+    @apply tablet:pt-[40px] tablet:pb-[86px];
+}
+
+.s-cta__row {
+    @apply flex flex-col rounded-[20px] overflow-hidden;
+    @apply laptop:flex-row;
+}
+
+.s-cta__img {
+    @apply w-full overflow-hidden h-[67vw] max-h-[500px];
+    @apply laptop:w-1/2 laptop:h-auto laptop:max-h-[none];
+
+    picture,
+    img {
+        @apply w-full h-full object-cover object-right;
+    }
+}
+
+.s-cta__content {
+    @apply w-full bg-violet-200 pt-[30px] pb-[34px] pr-[25px] pl-[16px];
+    // @apply tablet:py-[45px] tablet:pr-[73px] tablet:pl-[38px];
+    @apply laptop:w-1/2;
+    @apply desktop:py-[45px] desktop:pr-[73px] desktop:pl-[38px];
+}
+
+.s-cta__title {
+    @apply font-bold text-m-1 leading-[1.2] mb-[19px];
+    @apply tablet:text-ml-5 tablet:mb-[28px];
+    @apply desktop:text-xl desktop:leading-10 desktop:mb-[32px];
+}
+
+.s-cta__description {
+    @apply text-xs-1 leading-[1.5];
+    @apply tablet:text-base;
+    @apply desktop:text-[24px];
+}
+
+.s-cta__buttons {
+    @apply mt-[16px] flex gap-x-[23px];
+    @apply tablet:mt-[61px];
+    @apply desktop:gap-x-[30px];
+
+    .c-button__primary--dark-blue {
+        @apply text-violet-200;
+    }
+
+    .c-button {
+        @apply min-w-[140px];
+        @apply tablet:min-w-[219px];
+    }
+}

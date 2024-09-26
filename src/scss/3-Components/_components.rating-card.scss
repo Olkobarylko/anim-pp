@@ -1,0 +1,20 @@
+.c-rating-card {
+    @apply border border-dark rounded-s1 py-[4px] px-[15px] inline-flex items-center gap-x-[12px];
+    @apply tablet:text-ml-2 tablet:px-[17px] tablet:py-[7px];
+    @apply desktop:text-[50px] desktop:gap-x-[17px] desktop:py-[8px];
+}
+
+.c-rating-card__num {
+    @apply font-bold text-ml-1 leading-10;
+    @apply tablet:leading-128 tablet:text-ml-2;
+    @apply desktop:px-[7px] desktop:text-[50px] desktop:leading-[0.92];
+}
+
+.c-rating-card__stars {
+    @apply flex gap-x-[4px];
+
+    svg {
+        @apply w-[12px] h-[12px];
+        @apply tablet:w-[17px] tablet:h-[16px];
+    }
+}

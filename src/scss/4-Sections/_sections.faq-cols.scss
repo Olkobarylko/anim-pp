@@ -1,0 +1,44 @@
+.s-faq-grid {
+    @apply pt-[96px] pb-[52px] bg-orange-100;
+    @apply tablet:py-[60px];
+    @apply desktop:pt-[40px] desktop:pb-[61px];
+}
+
+.s-faq-grid__title {
+    @apply font-bold text-m-2 leading-[1.2] text-center mb-[49px];
+    @apply tablet:text-ml-2;
+    @apply desktop:text-l desktop:leading-[1.28] desktop:mb-[60px];
+}
+
+.s-faq-grid__grid {
+    @apply grid grid-cols-1 gap-y-[32px] max-w-[1486px] mx-auto;
+    @apply tablet:grid-cols-2 tablet:gap-x-[40px] tablet:gap-y-[48px];
+    @apply desktop:gap-x-[86px] desktop:gap-y-[72px];
+}
+
+.s-faq-grid__item-title {
+    @apply font-bold text-base leading-[1.29] mb-[12px];
+    @apply tablet:text-m tablet:mb-[22px];
+    @apply desktop:text-m-1 desktop:leading-[1.28] desktop:mb-[32px];
+}
+
+.s-faq-grid__item-description {
+
+    p {
+        @apply text-xs-1 leading-[1.5] mt-0;
+        @apply tablet:text-s;
+        @apply desktop:text-base;
+    }
+}
+
+.s-faq-grid__button {
+    @apply mt-[40px] text-center;
+    @apply tablet:mt-[58px];
+    @apply desktop:mt-[77px];
+
+    .c-button {
+        @apply min-w-[180px] py-[8px];
+        @apply tablet:min-w-[220px] tablet:py-[6px];
+        @apply desktop:min-w-[246px];
+    }
+}

@@ -1,0 +1,25 @@
+.s-testimonials {
+    @apply py-[96px] bg-grey;
+    @apply tablet:py-[40px];
+    @apply desktop:pb-[71px];
+}
+
+.s-testimonials__title {
+    @apply font-bold text-m-2 leading-128 mb-[11px] text-center max-w-[827px] mx-auto;
+    @apply tablet:text-ml-2 tablet:mb-[24px];
+    @apply desktop:text-l;
+}
+
+.s-testimonials__rating-box {
+    @apply text-center mb-[41px];
+    @apply tablet:mb-[50px];
+    @apply desktop:mb-[60px];
+}
+
+.s-testimonials__row {
+    @apply flex flex-wrap justify-center gap-y-[24px] gap-x-[28px] max-w-[1544px] mx-auto;
+}
+
+.s-testimonials__button-box {
+    @apply mt-[60px] flex justify-center;
+}

@@ -1,0 +1,35 @@
+.c-button {
+    @apply cursor-pointer no-underline py-[9px];
+    @apply tablet:py-[7px];
+    @apply transition-all duration-300;
+}
+
+.c-button__primary {
+    @apply text-s leading-[1.13] -tracking-sm font-semibold inline-block px-[20px] min-w-[180px] text-center rounded-[50px];
+    @apply tablet:text-base tablet:leading-15 tablet:min-w-[200px];
+    @apply desktop:leading-[1.8] desktop:min-w-[219px];
+
+    &:hover {
+        @apply opacity-75;
+    }
+}
+
+.c-button__primary--orange {
+    @apply bg-orange-900 text-white;
+}
+
+.c-button__primary--dark-blue {
+    @apply bg-dark text-white;
+}
+
+.c-button__primary--light-blue {
+    @apply bg-dark/20 text-dark;
+}
+
+.c-button__primary--dark-blue-outline {
+    @apply bg-transparent text-dark border border-dark;
+
+    &:hover {
+        @apply opacity-100 bg-dark text-white;
+    }
+}

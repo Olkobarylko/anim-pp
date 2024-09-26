@@ -1,0 +1,17 @@
+.s-grid-cards {
+    @apply pt-[96px] pb-[27px];
+    @apply tablet:pt-[60px];
+    @apply desktop:pt-[52px] desktop:pb-[38px];
+}
+
+.s-grid-cards__title {
+    @apply font-bold text-m-2 leading-12 text-center mb-[55px];
+    @apply tablet:text-ml-2;
+    @apply desktop:text-l desktop:mb-[80px];
+}
+
+.s-grid-cards__row {
+    @apply flex justify-center flex-row flex-wrap items-center gap-y-[56px] max-w-[1260px] mx-auto;
+    @apply tablet:gap-x-[30px];
+    @apply laptop:items-stretch;
+}

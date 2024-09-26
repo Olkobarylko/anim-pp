@@ -1,0 +1,28 @@
+.s-logos {
+    @apply pt-[37px] pb-[27px];
+
+    .container {
+        @apply  overflow-auto;
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
+        &::-webkit-scrollbar {
+          display: none; /* for Chrome, Safari, and Opera */
+        }
+    }
+}
+
+.s-logos__row {
+    @apply max-w-[1268px] mx-auto flex gap-x-[20px] gap-y-[20px] items-center;
+    @apply tablet:gap-x-[30px];
+    @apply laptop-xl:justify-center;
+    @apply desktop:gap-x-[40px];
+}
+
+.s-logos__item {
+    @apply shrink-0 max-w-[160px];
+
+    picture,
+    img {
+        @apply w-full h-full object-contain;
+    }
+}

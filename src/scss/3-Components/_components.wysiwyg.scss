@@ -1,0 +1,39 @@
+.c-wysiwyg {
+    p + p {
+        @apply mt-0;
+    }
+
+    p,
+    ul,
+    ol {
+        @apply text-s leading-15;
+        @apply laptop:text-base;
+    }
+
+    a {
+        @apply underline underline-offset-2;
+
+        &:hover {
+            @apply no-underline;
+        }
+    }
+
+    ul li {
+        @apply list-disc;
+    }
+
+    ol li {
+        @apply list-decimal;
+    }
+
+    ul,
+    ol {
+        @apply ml-[26px];
+    }
+
+    p:not(:last-child),
+    ul:not(:last-child),
+    ol:not(:last-child) {
+        @apply mb-[22px];
+    }
+}

@@ -1,0 +1,55 @@
+.s-two-cards-columns {
+    @apply pt-[40px] pb-[80px];
+}
+
+.s-two-cards-columns__title {
+    @apply font-bold text-[56px] leading-[1.28] mb-[16px];
+}
+
+.s-two-cards-columns__grid {
+    @apply flex gap-x-[49px];
+}
+
+.s-two-cards-columns__card {
+    @apply rounded-[40px] overflow-hidden flex flex-col justify-between w-[593px] relative;
+}
+
+.s-two-cards-columns__card-overlay {
+    @apply absolute left-0 top-0 w-full h-1/2;
+}
+
+.s-two-cards-columns__card:nth-child(1) {
+    @apply bg-violet-900;
+}
+
+.s-two-cards-columns__card:nth-child(2) {
+    @apply bg-[#FFC78A];
+
+    .s-two-cards-columns__card-overlay {
+        background: linear-gradient(180deg, #FB8F3D 0%, rgba(251, 143, 61, 0) 100%);
+    }
+}
+
+.s-two-cards-columns__card--double {
+    @apply w-[958px] shrink-0;
+
+    .s-two-cards-columns__card-header {
+        @apply max-w-[501px];
+    }
+}
+
+.s-two-cards-columns__card-header {
+    @apply p-[32px] text-white max-w-[451px] relative;
+}
+
+.s-two-cards-columns__card-title {
+    @apply font-bold text-[42px] leading-[1.28] mb-[12px];
+}
+
+.s-two-cards-columns__card-description {
+    @apply text-[24px] leading-[1.16];
+}
+
+.s-two-cards-columns__card-img {
+    @apply max-h-[380px];
+}

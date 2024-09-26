@@ -1,0 +1,92 @@
+.gallery {
+  @apply pt-[62px] tablet:pt-[259px] desktop:pt-[264px];
+  // padding: 120px 0 0;
+  overflow: hidden;
+}
+
+.gallery__title {
+  @apply font-bold text-m-2 leading-[1.2] text-center mb-[11px];
+  @apply tablet:text-ml-2;
+  @apply desktop:text-l;
+}
+
+.gallery__description {
+  @apply text-s leading-[1.5] text-center mb-[11px] max-w-[938px] mx-auto;
+  @apply tablet:text-m;
+  @apply desktop:text-m-1;
+}
+
+.gallery__button {
+  @apply text-center;
+}
+
+.gallery__sliders {
+  height: calc(100vh - 110px);
+  overflow: hidden;
+  @apply hidden tablet:flex flex gap-[20px] mt-[80px] w-[1940px] relative
+    left-1/2 -translate-x-1/2;
+}
+
+.gallery__splide {
+  @apply rounded-[20px] overflow-hidden;
+}
+
+.gallery__splide:nth-child(1) {
+  height: calc(100% - 161px);
+  @apply max-w-[144px] mt-[78px];
+}
+
+.gallery__splide:nth-child(2) {
+  height: calc(100% - 44px);
+  @apply max-w-[192px] max-h-[928px];
+}
+
+.gallery__splide:nth-child(3) {
+  height: calc(100% - 134px);
+  @apply max-w-[230px] mt-[61px];
+}
+
+.gallery__splide:nth-child(4) {
+  height: calc(100% - 108px);
+  @apply max-w-[300px] mt-[108px];
+}
+
+.gallery__splide:nth-child(5) {
+  height: calc(100% - 121px);
+  @apply max-w-[320px] mt-[61px];
+}
+
+.gallery__splide:nth-child(6) {
+  height: calc(100% - 108px);
+  @apply max-w-[256px] mt-[108px];
+}
+
+.gallery__splide:nth-child(7) {
+  height: calc(100% - 101px);
+  @apply max-w-[205px] mt-[33px];
+}
+
+.gallery__splide:nth-child(8) {
+  height: calc(100% - 33px);
+  @apply max-w-[158px];
+}
+
+.gallery__splide img {
+  @apply block rounded-[15px] max-h-[988px];
+}
+
+.mobile__gallery {
+  @apply block tablet:hidden;
+  margin-bottom: 45px;
+}
+
+.mobile__gallery .splide__slide img {
+  height: 263px;
+  width: 164px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.gallery__splide iframe{
+  border-radius: 15px;
+}
